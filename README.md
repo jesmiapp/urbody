@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jesmi</title>
+<!-- إضافة مكتبة الأيقونات Font Awesome (اختياري) -->
+<link rel="stylesheet" href="cdnjs.cloudflare.com">
+<style>
+/* ======== إعدادات عامة ======== */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  position: relative;
+}
+
+/* ======== حاوية الموقع ======== */
+.container {
+  background: rgba(0,0,0,0.6);
+  padding: 50px 30px;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 0 0 30px rgba(0,0,0,0.4);
+  max-width: 400px;
+  width: 90%;
+  animation: fadeIn 1s ease-in;
+  z-index: 1;
+}
+
+/* ======== العنوان والفقرة ======== */
+h1 {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+  text-shadow: 2px 2px 8px rgba(0,0,0,0.5);
+}
+
+p {
+  font-size: 1.1em;
+  margin-bottom: 30px;
+}
+
+/* ======== الأزرار ======== */
+.links {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.links a {
+  text-decoration: none;
+  color: #fff;
+  /* اللون الافتراضي للأزرار الأخرى */
+  background: linear-gradient(90deg, #ff416c, #ff4b2b);
+  padding: 15px;
+  border-radius: 10px;
+  font-weight: bold;
+  transition: 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* تنسيق خاص لزر jesmi app (اللون الأزرق السماوي) */
+.links .app-link {
+    background: linear-gradient(90deg, #00c6ff, #0072ff);
+    box-shadow: 0 5px 15px rgba(0, 114, 255, 0.4); /* إضافة ظل أزرق مميز */
+}
+
+
+.links a:hover {
+  transform: scale(1.05);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+/* تنسيق الأيقونات (اختياري) */
+.links i {
+  margin-right: 10px;
+  font-size: 1.2em;
+}
+
+
+/* ======== تأثير Fade In ======== */
+@keyframes fadeIn {
+  from {opacity: 0; transform: translateY(-20px);}
+  to {opacity: 1; transform: translateY(0);}
+}
+
+/* ======== للهواتف ======== */
+@media (max-width: 500px) {
+  .container {
+    padding: 30px 20px;
+  }
+  h1 {
+    font-size: 2em;
+  }
+  p {
+    font-size: 1em;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+  <h1>Jesmi</h1>
+  <p>One body</p>
+
+  <div class="links">
+    <!-- الوصلة الجديدة jesmi app مع الفئة app-link -->
+    <a href="https://item-fairy-08362061.figma.site" target="_blank" class="app-link"><i class="fas fa-mobile-alt"></i> **jesmi app**</a>
+
+    <!-- الروابط الأخرى -->
+</a>
+
+    <a href="https://wa.me/201154190610" target="_blank" rel="noopener noreferrer">
+      <i class="fab fa-whatsapp"></i> WhatsApp
+    </a>
+
+    <a href="mailto:graphic.abdalla@gmail.com">
+      <i class="far fa-envelope"></i> Email
+    </a>
+
+    <a href="https://www.facebook.com/abdulla.taha.50" target="_blank" rel="noopener noreferrer">
+      <i class="fab fa-facebook-f"></i> Facebook
+    </a>
+
+    <a href="https://www.linkedin.com/in/abdalla-mustafa-3421b722b" target="_blank" rel="noopener noreferrer">
+      <i class="fab fa-linkedin-in"></i> LinkedIn
+    </a>
+  </div>
+</div>
+
+</body>
+</html>
